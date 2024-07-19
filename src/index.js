@@ -12,11 +12,7 @@ import SignInForm from './components/SignInForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
   
-  {/* <SignInForm/> */}
-  {/* <Header/> */}
-  {/* <BudgetForm/> */}
   <App/>
   <ToastContainer/>
   </>
