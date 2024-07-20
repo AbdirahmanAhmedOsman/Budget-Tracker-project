@@ -12,7 +12,10 @@ function BudgetList() {
       <ul>
         {budgetItems.map(item => (
           <li key={item.id} className="flex justify-between items-center mb-4 p-3 border-b">
-            <span className='flex justify-around gap-3'>{item.name} ${item.amount}</span>
+            <div>
+            <span className=' flex '>Name: {item.name} </span>
+            <span className=' flex '> Amount: ${item.amount}</span>
+            </div>
             <div>
               <Link to={`/edit/${item.id}`} className="text-blue-500 mr-2">Edit</Link>
               <button onClick={() => deleteBudgetItem(item.id)} className="text-red-500">Delete</button>

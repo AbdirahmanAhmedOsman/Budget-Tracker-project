@@ -13,10 +13,7 @@ import SignInForm from './components/SignInForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  <h1>Helllow</h1>
-  {/* <SignInForm/> */}
-  {/* <Header/> */}
-  {/* <BudgetForm/> */}
+
   <App/>
   <ToastContainer/>
   </>
