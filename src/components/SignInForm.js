@@ -24,7 +24,7 @@ const handleSubmit = async (e) =>{
   
   //condition email and password
   if(!email || !password) {
-    toast.error('Empty email || password!')
+    toast.error('this user doe not exist!, pls create a user')
     return;
   }
 

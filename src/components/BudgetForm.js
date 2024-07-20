@@ -58,7 +58,7 @@ function BudgetForm() {
               onChange={(e) => setAmount(e.target.value)}
             />
           </div>
-          <button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+          <button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
         </form>
       </div>
     </div>
