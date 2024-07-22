@@ -5,6 +5,10 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Loader from './Loader'
 
+// every websites need to have a Sign-In feature to ensure data security
+// Additionally, good connections should be established for proper interaction so that later on, you can track the user who signed in
+// Therefore, this code will handle that task by having buttons and inputs;
+// Additionally, your data will be saved and stored in Firebase
 
 
 function SingInForm() {

@@ -3,10 +3,12 @@ import React, { useState, useContext, useEffect } from 'react';
 import { BudgetContext } from '../context/BudgetContext';
 import { useNavigate, useParams } from 'react-router-dom';
 
+// Budgetform ka code kaan waxa uu qabanayaa bottons ka io inputs ka oo project geena leeyahay, sida in 
+//aan kusoo darno BudgetName iyo Amountigiiisa isagagoo isku xiraayo iyo sidoo kale wuxuu leeyahy Button ka ADD.
 
 function BudgetForm() {
-  const [name, setName] = useState('');
-  const [amount, setAmount] = useState('');
+  const [name, setName] = useState(''); // Name ka variable kiisa inaa sameeyo adoo isticmaalayo UseState
+  const [amount, setAmount] = useState(''); // kana waa sidoo kale Viriable ka Amountiga inaa sameyso adoo isticmalayo UseState
 
   const { addBudgetItem, updateBudgetItem, budgetItems } = useContext(BudgetContext);
   const { id } = useParams();
@@ -38,6 +40,8 @@ function BudgetForm() {
     navigate('/');
   };
 
+
+  // inta waa FrontEnd ga webka soo muuqanaayo sida buutons ,labels, inputs, adoo isticmalayo Tailwind
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md mx-auto bg-white p-8 rounded shadow">

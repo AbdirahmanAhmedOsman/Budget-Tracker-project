@@ -7,6 +7,7 @@ function BudgetList() {
   const { budgetItems, deleteBudgetItem } = useContext(BudgetContext);
 
   return (
+  //  <div className="flex items-center justify-center min-h-screen">
     <div className= "flex flex-col  justify-center py-12 bg-gray-100"> 
     <div className='"w-full max-w-2xl bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"'>
       <h2 className="text-3xl font-bold mb-6 text-center">Budget List</h2> 
@@ -19,7 +20,7 @@ function BudgetList() {
             </div>
             <div>
               <Link to={`/edit/${item.id}`} className="text-blue-500 mr-2">Edit</Link>
-              <button onClick={() => deleteBudgetItem(item.id)} className="text-red-500">Delete</button>
+              <button onClick={() => deleteBudgetItem(item.id)} className="text-red-500">Delete</button> 
             </div>
           </li>
         ))}

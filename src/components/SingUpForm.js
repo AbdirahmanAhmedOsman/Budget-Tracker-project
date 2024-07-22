@@ -5,7 +5,10 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Loader from './Loader'
 
-
+// All websites need to have a Sign-Up feature to save users in the Database
+// Also, good connections should be established for proper interaction so that later on, you can track the user who signed up
+// Therefore, this code will handle that task by having buttons and inputs;
+// Additionally, your data will be saved, and it will be stored in Firebase.
 
 function SingUpForm() {
 
