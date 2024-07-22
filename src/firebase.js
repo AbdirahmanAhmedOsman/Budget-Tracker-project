@@ -5,12 +5,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDl32haDC6xhLH9s2XMICemFusxCC8ImYE",
-  authDomain: "budget-trucker-project.firebaseapp.com",
-  projectId: "budget-trucker-project",
-  storageBucket: "budget-trucker-project.appspot.com",
-  messagingSenderId: "469384560386",
-  appId: "1:469384560386:web:aab4310f69fb8acd358c1b"
+  apiKey: "AIzaSyB-Q7QNLye-D2qBcsVgMyJq1eRTQraMPrk",
+  authDomain: "abdiproject-b957d.firebaseapp.com",
+  projectId: "abdiproject-b957d",
+  storageBucket: "abdiproject-b957d.appspot.com",
+  messagingSenderId: "171660597338",
+  appId: "1:171660597338:web:bea26fe492fd31e760e063",
+  measurementId: "G-70YCWE8MT7"
 };
 
 // Initialize Firebase
