@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { BudgetContext } from '../context/BudgetContext';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function BudgetList() {
   const { budgetItems, deleteBudgetItem } = useContext(BudgetContext);
