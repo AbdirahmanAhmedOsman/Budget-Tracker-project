@@ -1,4 +1,5 @@
- import React, { useState, useContext, useEffect } from 'react';
+
+import React, { useState, useContext, useEffect } from 'react';
 import { BudgetContext } from '../context/BudgetContext';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -11,6 +12,7 @@ function BudgetForm() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  // choose Id, to changing the id that you want to change
   useEffect(() => {
     if (id) {
       // const itemToEdit = budgetItems.find(item => item.id === id);
@@ -24,13 +26,14 @@ function BudgetForm() {
     }
   }, [id, budgetItems]);
 
+  // function use to add item and amount in the project
   const handleSubmit = (e) => {
     e.preventDefault();
     // const newItemEdit = { id: id || Date.now().toString(), name, amount: parseFloat(amount) };
     if (id) {
-      updateBudgetItem({id , name , amount});
+      updateBudgetItem({id , name , amount});  // update throught ID to change name and Amount
     } else {
-      addBudgetItem({name , amount});
+      addBudgetItem({name , amount});  // add  name and amount
     }
     navigate('/');
   };

@@ -8,15 +8,16 @@ const Header = () => {
   const nav = useNavigate();
   const CurrentUser = UserCurrent();
 
-  const SignOut = async () =>{
+  const SignOut = async () =>{  // this code you able the first running project to visible Sign-in, if there signin to Sign out
     await signOut(auth)
     nav('/signin')
+    //// Headers of the project 
   }
 
   return (
     <header className="bg-blue-500 text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link className="text-xl font-bold">Budget Tracker</Link>
+        <Link className="text-xl font-bold">Budget Tracker</Link> 
         <nav>
           <Link to="/" className="mr-4">Home</Link>
           {CurrentUser ? (

@@ -1,7 +1,7 @@
 import React from 'react';
 import BudgetList from '../components/BudgetList';
 import BudgetForm from '../components/BudgetForm';
-
+// Home of the Header
 const Home = () => {
     return (
         <div className="container mx-auto p-4">

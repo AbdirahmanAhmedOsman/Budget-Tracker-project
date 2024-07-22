@@ -5,7 +5,7 @@ import { Navigate } from 'react-router-dom';
 
 
 function ProtectedRoute({children}) {
-    const [currentUser , setCurrentUsser] = useState(null);
+    const [currentUser , setCurrentUsser] = useState(null); 
     const [loading , setLoading] = useState(true);
 
     useEffect(() =>{
